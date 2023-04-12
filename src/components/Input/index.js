@@ -6,10 +6,8 @@
 
 import React from 'react';
 
-function Input() {
-    return (
-    <input type="text" onChange={()=>""} />
-    )
+function Input({changeFunction}) {
+    return <input type="text" onChange={changeFunction} />;
 }
 
 export default Input;
