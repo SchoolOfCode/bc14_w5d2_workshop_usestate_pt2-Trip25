@@ -17,6 +17,8 @@ function App() {
       <h1>JSX will go here!</h1>
 
       <Input changeFunction={handleChange} />
+      <Item text={text} style={{ fontFamily: "Impact" }} />
+      <Item text={text} />
       <Item text={text} />
     </div>
   );
