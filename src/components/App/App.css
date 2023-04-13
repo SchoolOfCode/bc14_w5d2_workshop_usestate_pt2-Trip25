@@ -1,5 +1,10 @@
+*{
+   background-color: blanchedalmond;
+}
+
 .App {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .App-logo {
@@ -35,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+Input{
+    background-color: whitesmoke
 }

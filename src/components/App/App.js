@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [text, setText] = useState("");
-  const [fonts, setFonts] = useState(["Impact", "Arial", "Times New Roman", "Papyrus"]);
+  const [fonts, setFonts] = useState(["Impact", "Comic Sans", "Times New Roman", "Papyrus","Wingdings", "Ink Free", "Marlett"]);
 
   function handleChange(event){
     setText(event.target.value);
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>JSX will go here!</h1>
+      <h1>Font Changer App</h1>
 
       <Input changeFunction={handleChange} />
 
@@ -23,6 +23,10 @@ function App() {
       <Item text={text} font={fonts[1]} />
       <Item text={text} font={fonts[2]} />
       <Item text={text} font={fonts[3]} />
+      <Item text={text} font={fonts[4]} />
+      <Item text={text} font={fonts[5]} />
+      <Item text={text} font={fonts[6]} />
+
     </div>
   );
 }
